@@ -13,7 +13,7 @@ private:
             return nullptr;
         }
 
-        // Always choose the middle element to keep the left and right subtrees perfectly balanced
+        // Always choose the middle element as the root of the new TREE; to keep the left and right subtrees perfectly balanced
         int mid = left + (right - left) / 2;
 
         // Create a root node containing our middle element
