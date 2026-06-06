@@ -14,7 +14,7 @@ public:
     void dfs(int city, vector<vector<int>>& isConnected, vector<bool>& visited) {
         visited[city] = true; // Mark the current city as visited
         
-        // Check all potential neighboring cities
+        // Check all potential neighboring cities and read who are the neughboring cities!
         for (int neighbor = 0; neighbor < isConnected.size(); neighbor++) {
             // If a connection exists and the neighbor hasn't been visited yet
             if (isConnected[city][neighbor] == 1 && !visited[neighbor]) {
