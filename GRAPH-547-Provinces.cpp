@@ -25,7 +25,7 @@ public:
 
     int findCircleNum(vector<vector<int>>& isConnected) {
         int n = isConnected.size(); // Total number of cities
-        vector<bool> visited(n, false); // Track visited cities to avoid double counting
+        vector<bool> visited(n, false); // initially all of the cities are not on the list, false means no name
         int provinceCount = 0; // Initialize the total province counter
         
         // Loop through each city to ensure every province is discovered
